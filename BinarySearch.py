@@ -32,7 +32,7 @@ class BinarySearch:
         if self.key == self.array[middle]:
             return middle
 
-        elif self.low == self.high:
+        elif self.low >= self.high:
             return
 
         elif self.key > self.array[middle]:
@@ -60,4 +60,8 @@ print(BinarySearch(array, key).binary_search())
 
 array = [4]
 key = 4  # Expected output: 0
+print(BinarySearch(array, key).binary_search())
+
+array = [2, 5]
+key = 0  # Expected output: None
 print(BinarySearch(array, key).binary_search())
