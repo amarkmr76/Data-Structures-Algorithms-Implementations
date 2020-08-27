@@ -12,7 +12,7 @@ class MergeSort:
     def merge_sort(self, array):
 
         '''
-        The main recursive function. See examples below
+        The main recursive function to sort the input array. See examples below
         '''
 
         if len(array) > 1:
@@ -31,7 +31,7 @@ class MergeSort:
     def merge(self, array1, array2):
 
         '''
-        Comapres the elemts of the input arrays and outputs a sorted array
+        Compares the elemts of the input arrays and outputs a sorted array
         '''
 
         sorted_array = []
