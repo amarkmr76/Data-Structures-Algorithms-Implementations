@@ -11,6 +11,10 @@ class MergeSort:
 
     def merge_sort(self, array):
 
+        '''
+        The main recursive function. See examples below
+        '''
+
         if len(array) > 1:
             middle = int(len(array)/2)
             left_array = array[:middle]
@@ -25,6 +29,10 @@ class MergeSort:
         return sorted_array
 
     def merge(self, array1, array2):
+
+        '''
+        Comapres the elemts of the input arrays and outputs a sorted array
+        '''
 
         sorted_array = []
         while (array1 != []) & (array2 != []):
