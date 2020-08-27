@@ -23,7 +23,7 @@ class BinarySearch:
             Search if the key is present in the input array and return its
             index if it's present. None if it's not present
         '''
-        
+
         if self.array == []:
             return
 
