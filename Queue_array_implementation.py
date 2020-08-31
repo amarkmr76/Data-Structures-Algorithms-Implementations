@@ -4,14 +4,6 @@ Theory:
     All three basic operations (delete, insert, display) is applicable to the
     oldest element of the queue.
 
-Space and time complexity:
-    1. Space complexity: O(n)
-    2. Enqueue: O(1)
-    3. Dequeue: O(1)
-    4. Display front element: O(1)
-    5. Display back element: O(1)
-    6. Is empty: O(1)
-    7. Get length: O(1)
 '''
 
 

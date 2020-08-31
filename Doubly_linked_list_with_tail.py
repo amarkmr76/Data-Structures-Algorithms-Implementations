@@ -282,7 +282,10 @@ class DLinkedListWithTail:
             print('The list is empty!')
 
         else:
-            self.head = self.head.next
+            next_node = self.head.next
+            self.head = next_node
+            if next_node is not None:
+                next_node.previous = None
 
     def delete_last_node(self):
 
@@ -299,7 +302,10 @@ class DLinkedListWithTail:
             end_node = self.tail
             previous_node = end_node.previous
             print(previous_node.data)
-            previous_node.next = None
+            if previous_node is not None:
+                previous_node.next = None
+            else:
+                self.head = None
             self.tail = previous_node
 
     def delete_node_from_middle(self, node_value):

@@ -10,7 +10,6 @@ Space and time complexity:
     3. Delete: O(1)
     4. Display: O(1)
     5. Is empty: O(1)
-    6. Get length: O(1)
 
 '''
 
@@ -56,14 +55,6 @@ class Stack:
         else:
             return False
 
-    def get_length(self):
-
-        '''
-        Return the number of elements in the stack
-        '''
-
-        return len(self.stack)
-
     def print_all_elements(self):
 
         print(self.stack)
@@ -76,8 +67,6 @@ stack.push(87)
 stack.push(90)
 top_elem = stack.top()
 print(top_elem)
-len_stack = stack.get_length()
-print(len_stack)
 stack.pop()
 stack.pop()
 stack.print_all_elements()
