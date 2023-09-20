@@ -18,7 +18,7 @@ class Stack:
         # Do a bunch of stack stuff here
 
     def custom_function_runtime_optimization(self):
-        self.optimizer = 'rms'
+        self.optimizer = 'dummy_optinizer_v2'
 
     def enqueue(self, value):
 
