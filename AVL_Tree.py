@@ -35,13 +35,13 @@ class Queue:
 
         self.queue.append(value)
 
-    def dequeue(self):
+    def dequeue(self, param):
 
         '''
         Remove and output the element at the start of the queue
         '''
-
-        return self.queue.pop(0)
+        self.var = 1
+        return self.queue.pop(1)
 
     def is_empty(self):
 
