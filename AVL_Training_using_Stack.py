@@ -34,7 +34,7 @@ class Stack:
         Remove and output the element at the start of the queue
         '''
 
-        return self.queue.pop(0)
+        return self.queue.pop(1)
 
     def is_empty(self):
 
