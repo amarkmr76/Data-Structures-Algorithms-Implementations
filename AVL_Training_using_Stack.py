@@ -47,6 +47,9 @@ class Stack:
 
         else:
             return False
+    
+    def adding_new_module(self):
+        self.value = 'new module added'
 
 
 class Node:
