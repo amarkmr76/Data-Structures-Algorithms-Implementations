@@ -18,7 +18,7 @@ class Stack:
         # Do a bunch of stack stuff here
 
     def custom_function_runtime_optimization(self):
-        self.optimizer = 'adam'
+        self.optimizer = 'rms'
 
     def enqueue(self, value):
 
@@ -34,7 +34,7 @@ class Stack:
         Remove and output the element at the start of the queue
         '''
 
-        return self.queue.pop(0)
+        return self.queue.pop(1)
 
     def is_empty(self):
 
@@ -47,6 +47,9 @@ class Stack:
 
         else:
             return False
+    
+    def adding_new_module(self):
+        self.value = 'new module added'
 
 
 class Node:
