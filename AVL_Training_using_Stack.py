@@ -17,6 +17,9 @@ class Stack:
         self.queue = []
         # Do a bunch of stack stuff here
 
+    def custom_function_runtime_optimization(self):
+        self.optimizer = 'adam'
+
     def enqueue(self, value):
 
         '''
