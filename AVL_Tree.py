@@ -6,18 +6,6 @@ Theory:
     any changes (insertion/deletion) to the tree, the tree rebalances itself.
 '''
 
-class Stack:
-    def __init__(self):
-        self.queue = []
-
-    def enqueue(self, value):
-
-        '''
-        Push the input value at the end of the queue
-        '''
-
-        self.queue.append(value)
-
 class Queue:
 
     '''
@@ -35,13 +23,12 @@ class Queue:
 
         self.queue.append(value)
 
-    def dequeue(self, param):
+    def dequeue(self):
 
         '''
         Remove and output the element at the start of the queue
         '''
-        self.var = 1
-        return self.queue.pop(1)
+        return self.queue.pop(0)
 
     def is_empty(self):
 
